@@ -1,6 +1,7 @@
 
 import com.cleverbuilder.GlobalVars
 import com.cleverbuilder.SampleClass
+def call(Map params) {
 
 pipeline {
     agent any
@@ -22,4 +23,5 @@ pipeline {
             }
         }
     }
+}
 }
