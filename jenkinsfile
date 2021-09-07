@@ -7,7 +7,8 @@ stage('DemoJenkinsflle') {
 
   sayHello 'Dave'
     sayAge 20
-		def sanityMap = input id: 'SanityId', message: 'Should we continue?', ok: 'Yes, we should.', submitter: 'Alice, Noob', parameters: [string(defaultValue: '',description: '', name: 'Username'), string(defaultValue: '', description: '', name: 'Password'), booleanParam(description: '', name: 'Remain'),choice(choices:'ONE\nTWO', description: '', name: 'Choosen')]
+	def sanityMap = input id: 'SanityId', message: 'Should we continue?', ok: 'Yes, we should.', submitter: 'Alice, Noob', parameters: [string(defaultValue: '',description: '', name: 'Username'), string(defaultValue: '', description: '', name: 'Password'), booleanParam(description: '', name: 'Remain'),choice(choices:'ONE\nTWO', description: '', name: 'Choosen')]
+    	echo "Values trigger11: ${sanityMap['Username']}, ${sanityMap['Password']}, ${sanityMap['Remain']}, ${sanityMap['Choosen']}"
     sayPipeline1(name: "${sanityMap['Username']", age: "${sanityMap['Password']}")
     sayPipeline2(name: "${sanityMap['Username']", age: "${sanityMap['Password']}")
 }
