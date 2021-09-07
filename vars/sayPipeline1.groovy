@@ -5,7 +5,7 @@ def call(Map params) {
 pipeline {
     agent any
     stages {
-        stage('Demo') {
+        stage('DemoSayPipe1') {
             steps {
                 echo 'Hello, world 1'
                 sayHello "${name}"
