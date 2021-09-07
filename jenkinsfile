@@ -1,7 +1,7 @@
 @Library('mylibrary')
 @Library('pipeline-library-demo')_
 
-stage('Demo') {
+stage('DemoJenkinsflle') {
 
   echo 'Hello World'
 
