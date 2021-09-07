@@ -29,6 +29,5 @@ build(
 										],
 									  ],
 									)
-								echo "Values trigger11: ${sanityMap['Username']}, ${sanityMap['Password']}, ${sanityMap['Remain']}, ${sanityMap['Choosen']}"
-	)						
+								echo "Values trigger11: ${sanityMap['Username']}, ${sanityMap['Password']}, ${sanityMap['Remain']}, ${sanityMap['Choosen']}"						
 }
