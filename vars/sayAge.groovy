@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def increaseAge(Integer age = '10') {
+def call(Integer age = '10') {
   echo "Age is, ${age}."
 }
