@@ -1,5 +1,6 @@
-@Library('mylibrary')
-@Library('pipeline-library-demo')_
+
+@Library('pipeline-library-demo')
+@Library('mylibrary')_
 
 stage('DemoJenkinsflle') {
 
